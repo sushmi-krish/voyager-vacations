@@ -6,21 +6,22 @@ body{
     background-image: url('homepage.jpg');
     background-repeat: no-repeat;
     background-size:cover;
-     background-position:center;
+    background-position:center;
    
 
 }
 #navbar{
-    
+    cursor: pointer; 
     display:flex;
     align-items: center;
     width:100%;
     background-color: black;
     }
-    #navbar,a{
-        text-decoration: none;
-        color:white;
+#navbar,a{
+    text-decoration: none;
+    color:snow;
     }
+   
 .logo,h1{
     padding-top:10px
 }
@@ -38,6 +39,7 @@ li{
 ul{
     padding-left:20%;       
  }
+
  .input-container {
     position: relative;
     width: 300px;
@@ -58,7 +60,7 @@ input[type="text"] {
     top: 50%; /* Align buttons vertically */
     padding-left: 90px;
     transform: translateY(-50%); /* Center buttons vertically */
-    background-color: #007BFF;
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -74,7 +76,73 @@ input[type="text"] {
     margin-left:100%;
     left: 100px;
 }
-
-
-
-
+.button2:hover{
+    background-color: #ccc;
+    color:black;
+}
+.button1:hover{
+    background-color: #ccc;
+    color:black;
+}
+#home{
+    display:flex;
+    
+  }
+.homepage{
+    display:inline-block;
+    height:100vh;
+}
+.header{
+   color:#fff;
+    width:300px;
+    height:200px;
+    font-size: xx-large;
+    letter-spacing: 2px;
+    margin: 150px 0px 0px 200px ;
+    
+}
+.para{
+    
+    color:	#ffffff;
+    width:350px;
+    height:150px;
+    font-size: large;
+    margin: 0px 0px 0px 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+.book{
+    
+    margin:0px 0px 0px 200px;
+}
+#book{
+     font-size: medium;
+     background-color: #007bff;
+     padding:5px;
+     border:none;
+     color:white;
+     cursor:pointer;
+     }
+#book:hover{
+    background-color: #ccc;
+    color:black;
+}
+#navbar li:hover{
+    font-size: xx-large;
+}
+.sticky{
+    position:sticky;
+    top:0;  
+}
+   .border-line {
+    height: 100px;
+    border-left: 2px solid black; /* Line thickness and color */
+    padding:40px;;
+    margin:32px;
+}
+.social_container a svg{
+display:flex;
+width:64px;
+gap:20px;
+padding:10px;
+fill:greenyellow;
+}
