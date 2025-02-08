@@ -54,7 +54,15 @@ input[type="text"] {
     border-radius: 5px;
     outline: none;
 }
-
+#navbar svg{
+    position: absolute;
+    top: 50%; /* Align buttons vertically */
+    padding-left: 90px;
+    transform: translateY(-50%); 
+    width:18px;
+    left:70px;
+    margin-left:150px;
+}
 .button1, .button2 {
     position: absolute;
     top: 50%; /* Align buttons vertically */
@@ -70,7 +78,7 @@ input[type="text"] {
 }
 .button1{
     margin-left:100%;
-    left: 30px;
+    left: 32px;
 }
 .button2{
     margin-left:100%;
