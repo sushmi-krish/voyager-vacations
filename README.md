@@ -11,7 +11,7 @@ Welcome to Voyager Vacations! This project is designed to help users plan and ma
  1.HTML
  2.Css
  3.Java Script 
- 5.Database :JSON file
+ 4.Database :JSON file
  
 ## Usage:
   Explore Destinations based on your travel preferences such us weather,activity etc..
