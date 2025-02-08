@@ -7,6 +7,7 @@ Welcome to Voyager Vacations! This project is designed to help users plan and ma
  3.User Accounts: Save your trips, preferences, and itineraries for easy future access.
  
 ## Technologies Used:
+
  1.HTML
  2.Css
  3.Java Script 
