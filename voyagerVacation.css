@@ -1,4 +1,4 @@
-*body{
+*{
     margin:0px;
     padding:0px;
 }
@@ -10,18 +10,20 @@ body{
    
 
 }
-#navbar,a{
-    margin:0px;
+#navbar{
+    
     display:flex;
     align-items: center;
-    text-decoration:none;
     width:100%;
-    color:white;
-    
-    
-    
+    background-color: black;
+    }
+    #navbar,a{
+        text-decoration: none;
+        color:white;
+    }
+.logo,h1{
+    padding-top:10px
 }
-
 .logo{
     display:flex;
     gap:10px;
