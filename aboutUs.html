@@ -5,27 +5,92 @@
     <title>voyager vacations</title>
     <link rel="website icon" type="png/jpg" href="Shipicon.png">
     <link rel="stylesheet" href="voyagerVacation.css">
+    <style>
+        .aboutUs .head{
+            color:white;
+            width:200px;
+            height:60px;
+            margin:50px 0px 0px 10px;
+            text transform:uppercase;
+            font-size:xx-large;
+            font-weight:bolder;
+        }
+        .myself{
+            color:#ffffff;
+            width:45%;
+            font-size:large;
+            word-spacing:2px;
+            margin: 30px 0px 0px 100px;
+        }
+        .title{
+            width:250px;
+            height:50px;
+            margin:10px 0px 0px 10px;
+            text-align:center;
+            font-size:xx-large;
+            margin:0px;
+            color:white;
+
+        }
+        
+        .team{
+            width:1000px;
+            height:350px;
+            color:white;
+            display:flex;
+            margin-top:50px;
+        }
+        .team h1{
+            font-size:xx-large;
+            margin:0px;
+        }
+        .member{
+           display:inline block;
+           width:200px;
+           height:300px; 
+           margin:15px 0px 0px 60px;  
+           ba         
+        }
+        .person {
+            width:100px;
+            height:100px;
+            margin:10px 0px 0px 35px;
+            
+        }
+        .member h2{
+            text-align:center;
+        }
+        .member button{
+          background-color:#007bff;
+          color:white;
+           margin:5px 0px 0px 40px ;
+           width: 90px;
+           height:30px;
+           border-radius:5px;
+          cursor:pointer;
+          border:none;
+        }
+        .member button:hover{
+            background-color:#ccc;
+            color:black
+        }
+        </style>
 
 </head>
 <body>
-    <!--Navbar-->
-    <div id="homePage">
-    <nav id="navbar">
-        <div class="logo"><img src="Shipicon.png"width="60px" height="60px"><h1><a href=""> Voyager Vacation</a></h1></div>
-        <ul>       
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aboutUs.html">About Us</a></li>
-          <li><a href="">contact</a></li>
-          <li ><div class="input-container">
-            <input type="text" placeholder="Enter your Destination">
-            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>SearXNG</title><path d="m13.716 17.261 6.873 6.582L24 20.282l-6.824-6.536a9.11 9.11 0 0 0 1.143-4.43c0-5.055-4.105-9.159-9.16-9.159S0 4.261 0 9.316c0 5.055 4.104 9.159 9.159 9.159a9.11 9.11 0 0 0 4.557-1.214ZM9.159 2.773a6.546 6.546 0 0 1 6.543 6.543 6.545 6.545 0 0 1-6.543 6.542 6.545 6.545 0 0 1-6.542-6.542 6.545 6.545 0 0 1 6.542-6.543ZM7.26 5.713a4.065 4.065 0 0 1 4.744.747 4.064 4.064 0 0 1 .707 4.749l1.157.611a5.376 5.376 0 0 0-.935-6.282 5.377 5.377 0 0 0-6.274-.987l.601 1.162Z"/></svg>
-            <button type="button" class="button1">Search</button>
-            <button type="button" class="button2">clear</button>
-        </div></li>
-        </ul>
-    </nav>
-</div>
-<!--Home page -->
+     <!--Navbar-->
+     <div id="homePage">
+        <nav id="navbar">
+            <div class="logo"><img src="Shipicon.png"width="60px" height="60px"><h1><a href=""> Voyager Vacation</a></h1></div>
+            <ul>       
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutUs.html">About Us</a></li>
+              <li><a href="">contact</a></li>
+             
+            </ul>
+        </nav>
+    </div>
+    <!--Home page -->
 <section id="home">
     <!--Socialmedia container is created with position sticky -->
 <section class="sticky">
@@ -41,17 +106,46 @@
 <!--vertical border line-->
     <div class="border-line"></div>
 </section>
-<!--Description about homepage-->
-<section class="homePage">
-    <div class="header">
-  <h1>EXPLORE DREAM DESTINATION </h1>
+<!--Description about us --->
+<section class="aboutUs">
+    <div class="head">
+  <h1>ABOUT US </h1>
     </div>
-    <div class="para">
-    <p>There is no end to the adventures we can have if only we seek them with our eyes open.The biggest adventure you can take is to Voyager vacation for your dream destination</p>
+    <div class="myself">
+    <p>There is no end to the adventures we can have if only we seek them with our eyes open.The biggest adventure you can take is to Voyager vacation for your dream destination.At Voyager Vacation, we believe that travel is more than just visiting destinations—it's about creating unforgettable memories and embarking on life-changing adventures. Founded with a passion for exploration and discovery, our mission is to help you experience the world like never before.</p>
     </div>
-    <!--Book now button is added-->
-    <div class="book"><button id="book">Book Now</button></div>
-</section>
+   
+    
+    <!--Our team section-->
+    <section class="team">
+        <div class="title">
+        <h1>Our Team</h1>
+        </div>
+        <div class="member">
+            <div class="person">
+            <img src="profile.png" width="100px" height="100px">
+            </div>
+         <h2>John Deo</h2>
+         <p>John Deo is responsible for the customer satisfaction remains at the heart of every decision, creating tailored travel solutions that exceed expectations.</p>
+         <button>CEO</button>
+         </div>
+         <div class="member">
+            <div class="person">
+                <img src="profile.png" width="100px" height="100px">
+            </div>
+         <h2>Celina Thomas</h2>
+         <p>Celina Thomas Act as a bridge between the team and customers, ensuring that client needs and expectations are not only met but exceeded.</p>
+         <button>Team Lead</button>
+         </div>
+         <div class="member">
+            <div class="person">
+                <img src="profile.png" width="100px" height="100px">
+            </div>
+         <h2>Mike Tyson</h2>
+         <p> Mike Tyson is responsible  clients' dream vacations to life, combining precision, dedication, and a passion for creating extraordinary travel experiences.</p>
+         <button>Delivery Head</button>
+         </div>
+    </section>
 </section>
 </body>
 </html>

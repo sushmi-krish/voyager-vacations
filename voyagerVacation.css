@@ -6,16 +6,18 @@ body{
     background-image: url('homepage.jpg');
     background-repeat: no-repeat;
     background-size:cover;
-    background-position:center;
+    background-attachment: fixed;
    
-
-}
+   }
 #navbar{
     cursor: pointer; 
     display:flex;
     align-items: center;
     width:100%;
     background-color: black;
+    position:sticky;
+    top:0;
+    z-index:1000;
     }
 #navbar,a{
     text-decoration: none;
@@ -138,12 +140,9 @@ input[type="text"] {
     font-size: xx-large;
 }
 .sticky{
-    
     position:sticky;
     top:0;  
-    
-  
-}
+    }
    .border-line {
     height: 100px;
     border-left: 2px solid black; /* Line thickness and color */
@@ -156,20 +155,4 @@ width:64px;
 gap:20px;
 padding:10px;
 fill:greenyellow;
-}
-#AboutUs .head{
-    color:#fff;
-    letter-spacing: 5px;
-    font-size: xx-large;
-    padding:50px;
-    margin:15px 0px 0px 80px;
-}
-.description{
-    
-    color:#ffffff;
-    font-size: large;
-    width:600px;
-    height:250px;
-    word-spacing: 3px;
-    margin:0px 0px 0px 400px;
 }
