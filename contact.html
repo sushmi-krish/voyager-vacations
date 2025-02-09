@@ -115,11 +115,24 @@
         <input type="number" id="age" required><br><br>
         <label for="message" required>Message</label><br>
         <textarea id="message" row="4"></textarea><br><br>
-        <button>Submit</button>
-
-    </div>
-   
+        <button onclick="dataInformtion()">Submit</button>
+   </div>
 </section>
 </section>
+<script>
+    function dataInformtion(){
+        const name = document.getElementById("name").value;
+        const age = document.getElementById('age').value;
+        const message = document.getElementById("message").value;
+        const data=[]
+        if(name&&age&& message){
+            data.push(name,age,message);
+            alert(`Thank you!`)
+        }
+        else{
+            alert('Please refresh the page and try again');
+        }
+    }
+    </script>
 </body>
 </html>
