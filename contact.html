@@ -6,91 +6,87 @@
     <link rel="website icon" type="png/jpg" href="Shipicon.png">
     <link rel="stylesheet" href="voyagerVacation.css">
     <style>
-        .aboutUs .head{
-            color:white;
-            width:200px;
-            height:60px;
-            margin:50px 0px 0px 10px;
-            text transform:uppercase;
-            font-size:xx-large;
-            font-weight:bolder;
-        }
-        .myself{
-            color:#ffffff;
-            width:45%;
-            font-size:large;
-            word-spacing:2px;
-            margin: 30px 0px 0px 100px;
-        }
-        .title{
-            width:250px;
-            height:50px;
-            margin:10px 0px 0px 10px;
-            text-align:center;
-            font-size:xx-large;
-            margin:0px;
-            color:white;
-
-        }
-        
-        .team{
-            width:1000px;
-            height:350px;
-            color:white;
-            display:flex;
-            margin-top:50px;
-        }
-        .team h1{
-            font-size:xx-large;
-            margin:0px;
-        }
-        .member{
-           display:inline block;
-           width:200px;
-           height:300px; 
-           margin:15px 0px 0px 60px;  
-           ba         
-        }
-        .person {
-            width:100px;
-            height:100px;
-            margin:10px 0px 0px 35px;
+      .contactUs{
+          display:flex;
+          width:200vh;
+          height:100vh;
+          justify content:center;
             
-        }
-        .member h2{
+           }
+           .contact{
+            width:300px;
+            height:350px;
+            margin:3em 0px 0px 90px;
             text-align:center;
+            padding-top:0px;
+            color:#ffffff;
+            font-size:xx-large;
+           }
+           .contact p{
+            color:#ffffff;
+            font-size:large;
+            margin-top:6em;
+            word-spacing:5px;
+           }
+        .form{
+           display:inline-block;
+            width:400px;
+            height:400px;
+            opacity: 0.8;
+            margin:6em 0px 0px 10em;
         }
-        .member button{
-          background-color:#007bff;
-          color:white;
-           margin:5px 0px 0px 40px ;
-           width: 90px;
-           height:30px;
-           border-radius:5px;
-          cursor:pointer;
-          border:none;
+        .form label{
+            color:#ffffff;
+            font-size:large;
+            text-transform:uppercase;
+            padding:10px;
         }
-        .member button:hover{
+        .form input{
+            width:23em;
+            height:5px;
+            border:none;
+            border-radius:5px;
+            padding:10px;
+            margin:10px;
+        }
+        .form textarea{
+            width:23em;
+            height:10em;
+            border:none;
+            border-radius:5px;
+            padding:10px;
+            margin:10px;
+        }
+        .form button{
+            width:27em;
+            height:3em;
+            margin-left:10px;
+            border-radius:5px;
+            background-color:#007bff;
+            color:#ffffff;
+            cursor:pointer;
+            border:none;
+        }
+        .form button:hover{
             background-color:#ccc;
-            color:black
+            color:black;
         }
         </style>
-
 </head>
 <body>
-     <!--Navbar-->
-     <div id="homePage">
-        <nav id="navbar">
-            <div class="logo"><img src="Shipicon.png"width="60px" height="60px"><h1><a href=""> Voyager Vacation</a></h1></div>
-            <ul>       
-              <li><a href="index.html">Home</a></li>
-              <li><a href="aboutUs.html">About Us</a></li>
-              <li><a href="contact.html">contact US</a></li>
-             
-            </ul>
-        </nav>
-    </div>
-    <!--Home page -->
+    <!--Navbar-->
+    <div id="homePage">
+    <nav id="navbar">
+        <div class="logo"><img src="Shipicon.png"width="60px" height="60px"><h1><a href=""> Voyager Vacation</a></h1></div>
+        <ul>       
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contact.html">contact Us</a></li>
+         
+        </ul>
+    </nav>
+</div>
+<!--Home page -->
 <section id="home">
     <!--Socialmedia container is created with position sticky -->
 <section class="sticky">
@@ -106,44 +102,24 @@
 <!--vertical border line-->
     <div class="border-line"></div>
 </section>
-<!--Description about us --->
-<section class="aboutUs">
-    <div class="head">
-  <h1>ABOUT US </h1>
+<!--Description about homepage-->
+<section class="contactUs">
+    <div class="contact">
+  <h1>Contact Us </h1>
+  <p> Touch with Us </p>
     </div>
-    <div class="myself">
-    <p>There is no end to the adventures we can have if only we seek them with our eyes open.The biggest adventure you can take is to Voyager vacation for your dream destination.At Voyager Vacation, we believe that travel is more than just visiting destinations—it's about creating unforgettable memories and embarking on life-changing adventures. Founded with a passion for exploration and discovery, our mission is to help you experience the world like never before.</p>
+    <div class="form">
+        <label for="label" >Name</label><br>
+        <input type="text"  id="name" required><br><br>
+        <label for="age" required>Age</label><br>
+        <input type="number" id="age" required><br><br>
+        <label for="message" required>Message</label><br>
+        <textarea id="message" row="4"></textarea><br><br>
+        <button>Submit</button>
+
     </div>
- <!--Our team section-->
-    <section class="team">
-        <div class="title">
-        <h1>Our Team</h1>
-        </div>
-        <div class="member">
-            <div class="person">
-            <img src="profile.png" width="100px" height="100px">
-            </div>
-         <h2>John Deo</h2>
-         <p>John Deo is responsible for the customer satisfaction remains at the heart of every decision, creating tailored travel solutions that exceed expectations.</p>
-         <button>CEO</button>
-         </div>
-         <div class="member">
-            <div class="person">
-                <img src="profile.png" width="100px" height="100px">
-            </div>
-         <h2>Celina Thomas</h2>
-         <p>Celina Thomas Act as a bridge between the team and customers, ensuring that client needs and expectations are not only met but exceeded.</p>
-         <button>Team Lead</button>
-         </div>
-         <div class="member">
-            <div class="person">
-                <img src="profile.png" width="100px" height="100px">
-            </div>
-         <h2>Mike Tyson</h2>
-         <p> Mike Tyson is responsible  clients' dream vacations to life, combining precision, dedication, and a passion for creating extraordinary travel experiences.</p>
-         <button>Delivery Head</button>
-         </div>
-    </section>
+   
+</section>
 </section>
 </body>
 </html>
