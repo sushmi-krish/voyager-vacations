@@ -1,18 +1,16 @@
-//fetch('travel_recommendation_api.json')
-//.then(response =>{return response.json()})
-//.then(temple => console.log(temple.temples))
-//.then(data =>{ console.log(data.beaches)})
+
 const input = document.getElementById('input')
 const btnOne = document.getElementById('buttonOne');
 const btnTwo = document.getElementById('buttonTwo');
 const result =document.getElementById('result')
 btnOne.addEventListener('click',()=>{
+   
     fetch('travel_recommendation_api.json')
 .then(response =>{return response.json()})
 .then(data =>{
 
   const country = data.countries.find(item => item.name.toLowerCase() === input.value.toLowerCase())
- if(country){
+ if( country){
    console.log(country);
    const cities = country.cities;
     console.log(cities)
@@ -33,7 +31,7 @@ btnOne.addEventListener('click',()=>{
         input.value = '';
     })
   }
-else if(input.value.toLowerCase() ==='temples'){
+else if(input.value.toLowerCase() ==='temple'){
     let temples =data.temples;
    temples.forEach(temple =>{
     let div = document.createElement('div')
@@ -52,7 +50,7 @@ else if(input.value.toLowerCase() ==='temples'){
     input.value='';
    })
 }
-else if(input.value.toLowerCase() ==='beaches'){
+else if(input.value.toLowerCase() ==='beach'){
     let beaches = data.beaches;
    
     beaches.forEach(beach =>{
@@ -74,12 +72,13 @@ else if(input.value.toLowerCase() ==='beaches'){
     
 }
 else {
-    result.innerHTML = '<p>No matching results found. Please try again.</p>';
+    result.innerHTML = '<p>No matching results found. Please try with this beach,temple, Japan,Brazil or Auatralia.</p>';
+    
   }
 })
 .catch(error => {
     console.error('Error fetching the data:', error);
-    result.innerHTML = `<p>Error fetching data. Please try again later.</p>`;
+    result.innerHTML = `<p>Error fetching data. Please try with this temple,beach, Japan,Brazil or Australia.</p>`;
     input.value=''
   });
 
@@ -87,4 +86,5 @@ else {
 btnTwo.addEventListener('click',()=>{
     result.style.display='block';
     result.innerHTML='';
+    input.value='';
 })
