@@ -111,8 +111,8 @@
     <div class="form">
         <label for="label" >Name</label><br>
         <input type="text"  id="name" required><br><br>
-        <label for="age" required>Age</label><br>
-        <input type="number" id="age" required><br><br>
+        <label for="email" required>Email</label><br>
+        <input type="email" id="email" required><br><br>
         <label for="message" required>Message</label><br>
         <textarea id="message" row="4"></textarea><br><br>
         <button onclick="dataInformtion()">Submit</button>
@@ -122,11 +122,11 @@
 <script>
     function dataInformtion(){
         const name = document.getElementById("name").value;
-        const age = document.getElementById('age').value;
+        const age = document.getElementById('email').value;
         const message = document.getElementById("message").value;
         const data=[]
-        if(name&&age&& message){
-            data.push(name,age,message);
+        if(name&&email&& message){
+            data.push(name,email,message);
             alert(`Thank you!`)
         }
         else{
