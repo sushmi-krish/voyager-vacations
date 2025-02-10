@@ -157,25 +157,18 @@ padding:10px;
 fill:greenyellow;
 }
 
-#result{
-    background-color: #fff;
-    margin:10px; 
-    
-}
+
 #result h1{
-    color:#000;
+    color:#ffffff;
     text-align: center;
     font-size:xx-large;
 }
 #result p{
-    color:#000;
+    color:#ffffff;
     font-size:large;
 }
 #result img{
    width:600px;
-   height:250px;
+   height:150px;
    margin:10px 0px 0px 10px;
-}
-#image1{
-    margin:20px 0px 0px 20px;
 }
